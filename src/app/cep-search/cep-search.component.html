@@ -1,0 +1,10 @@
+<h3>Seach a CEP</h3>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="cep"> Id </label>
+    <input id="cep" type="text" name="cep" #cep />
+  </div>
+
+  <button class="button" (click)="getCep(cep.value)">Search</button>
+</form>
